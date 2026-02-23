@@ -3,11 +3,11 @@ meta:
   toolchain:
     name: pip
     version: "3.12"
-
 build:
   requirementsPath: requirements.txt
   useCache: true
-
 run:
   scriptName: bot.py
-  containerPort: 80
+  command: null
+  persistenceMount: /data
+  containerPort: "80"
